@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/vInterest_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:fontFamily="@font/amiko"
+        android:text="@string/default_money"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/interest_display"
+        app:layout_constraintEnd_toEndOf="@+id/monthly_display"
+        app:layout_constraintTop_toTopOf="@+id/interest_display"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/vLoan_amount_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:fontFamily="@font/amiko"
+        android:text="@string/default_money"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/loan_amount_display"
+        app:layout_constraintEnd_toEndOf="@+id/monthly_display"
+        app:layout_constraintTop_toTopOf="@+id/loan_amount_display"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/vTax_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:fontFamily="@font/amiko"
+        android:text="@string/default_money"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tax_display"
+        app:layout_constraintEnd_toEndOf="@+id/monthly_display"
+        app:layout_constraintTop_toTopOf="@+id/tax_display"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/vCost_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:fontFamily="@font/amiko"
+        android:text="@string/default_money"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/cost_display"
+        app:layout_constraintEnd_toEndOf="@+id/monthly_display"
+        app:layout_constraintTop_toTopOf="@+id/cost_display"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/vDown_payment_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:fontFamily="@font/amiko"
+        android:text="@string/default_money"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/down_payment_display"
+        app:layout_constraintEnd_toEndOf="@+id/monthly_display"
+        app:layout_constraintTop_toTopOf="@+id/down_payment_display"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/monthly_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/amiko_bold"
+        android:text="@string/monthly_p"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.06999999" />
+
+    <TextView
+        android:id="@+id/monthly_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/default_money"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/monthly_display"
+        app:layout_constraintStart_toStartOf="@+id/monthly_display"
+        app:layout_constraintTop_toBottomOf="@+id/monthly_display" />
+
+    <TextView
+        android:id="@+id/down_payment_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/amiko_bold"
+        android:text="@string/downPayment"
+        android:textColor="@color/darkg"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/price_display"
+        app:layout_constraintTop_toBottomOf="@+id/price_display" />
+
+    <TextView
+        android:id="@+id/vPrice_in_dollars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:fontFamily="@font/amiko"
+        android:text="@string/default_money"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/price_display"
+        app:layout_constraintEnd_toEndOf="@+id/monthly_display"
+        app:layout_constraintTop_toTopOf="@+id/price_display" />
+
+    <TextView
+        android:id="@+id/price_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:fontFamily="@font/amiko_bold"
+        android:text="@string/totalcost"
+        android:textColor="@color/darkg"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/monthly_display"
+        app:layout_constraintTop_toBottomOf="@+id/monthly_TV"
+        app:layout_constraintVertical_bias="0.19999999" />
+
+    <TextView
+        android:id="@+id/tax_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/amiko_bold"
+        android:text="@string/taxes"
+        android:textColor="@color/darkg"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/down_payment_display"
+        app:layout_constraintTop_toBottomOf="@+id/down_payment_display" />
+
+    <TextView
+        android:id="@+id/cost_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/amiko_bold"
+        android:text="@string/total_cost"
+        android:textColor="@color/red"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/tax_display"
+        app:layout_constraintTop_toBottomOf="@+id/tax_display" />
+
+    <TextView
+        android:id="@+id/loan_amount_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/amiko_bold"
+        android:text="@string/loan_rq"
+        android:textColor="@color/red"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/cost_display"
+        app:layout_constraintTop_toBottomOf="@+id/cost_display" />
+
+    <TextView
+        android:id="@+id/interest_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/amiko_bold"
+        android:text="@string/interest_amt"
+        android:textColor="@color/red"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/loan_amount_display"
+        app:layout_constraintTop_toBottomOf="@+id/loan_amount_display" />
+
+    <Button
+        android:id="@+id/return_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="goToMain"
+        android:text="@string/return_goback"
+        android:textColor="@color/lavender"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vInterest_TV"
+        app:layout_constraintVertical_bias="0.22000003" />
+</androidx.constraintlayout.widget.ConstraintLayout>

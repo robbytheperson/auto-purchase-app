@@ -1,3 +1,27 @@
 <resources>
     <string name="app_name">Auto Purchase App</string>
+    <string name="instructions">ENTER CAR PURCHASE INFORMATION</string>
+    <string name="buttonText">Generate Loan Report</string>
+    <string name="two_years">2 Years</string>
+    <string name="three_years">3 Years</string>
+    <string name="four_years">4 Years</string>
+    <string name="loanterm">Loan term</string>
+    <string name="price">Price of car:</string>
+    <string name="downp">Down payment:</string>
+    <string name="int_rate">Interest rate:</string>
+    <string name="zero_dollar">$0</string>
+    <string name="dollar">$</string>
+    <string name="percent">%</string>
+    <string name="monthly_p">Your monthly payment is</string>
+    <string name="default_money">$0.00</string>
+    <string name="totalcost">Price on tag:</string>
+    <string name="downPayment">Down payment:</string>
+    <string name="taxes">Tax:</string>
+    <string name="total_cost">Total cost:</string>
+    <string name="loan_rq">Loan amount:</string>
+    <string name="interest_amt">Interest amount:</string>
+    <string name="return_goback">Return to data entry</string>
+    <string name="_4">4</string>
+    <string name="_3">3</string>
+    <string name="_2">2</string>
 </resources>

@@ -7,12 +7,194 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/instructionsTV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:fontFamily="@font/candal"
+        android:text="@string/instructions"
+        android:textAlignment="center"
+        android:textColor="@color/red"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.049" />
+
+    <TextView
+        android:id="@+id/price_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:fontFamily="@font/amiko_bold"
+        android:text="@string/price"
+        android:textColor="@color/darkg"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/instructionsTV"
+        app:layout_constraintVertical_bias="0.060000002" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dollar"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/priceTyper"
+        app:layout_constraintEnd_toStartOf="@+id/priceTyper"
+        app:layout_constraintTop_toTopOf="@+id/priceTyper" />
+
+    <EditText
+        android:id="@+id/priceTyper"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginEnd="50dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/price_TV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/price_TV"
+        app:layout_constraintTop_toTopOf="@+id/price_TV" />
+
+    <TextView
+        android:id="@+id/down_p_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/amiko_bold"
+        android:text="@string/downp"
+        android:textColor="@color/darkg"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/price_TV"
+        app:layout_constraintTop_toBottomOf="@+id/priceTyper" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dollar"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/downTyper"
+        app:layout_constraintEnd_toStartOf="@+id/downTyper"
+        app:layout_constraintTop_toTopOf="@+id/downTyper" />
+
+    <EditText
+        android:id="@+id/downTyper"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/down_p_TV"
+        app:layout_constraintEnd_toEndOf="@+id/priceTyper"
+        app:layout_constraintStart_toStartOf="@+id/priceTyper"
+        app:layout_constraintTop_toTopOf="@+id/down_p_TV" />
+
+    <TextView
+        android:id="@+id/rate_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/amiko_bold"
+        android:text="@string/int_rate"
+        android:textColor="@color/darkg"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/down_p_TV"
+        app:layout_constraintTop_toBottomOf="@+id/downTyper" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/percent"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/rateTyper"
+        app:layout_constraintStart_toEndOf="@+id/rateTyper"
+        app:layout_constraintTop_toTopOf="@+id/rateTyper" />
+
+    <EditText
+        android:id="@+id/rateTyper"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/rate_TV"
+        app:layout_constraintEnd_toEndOf="@+id/downTyper"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/downTyper"
+        app:layout_constraintTop_toTopOf="@+id/rate_TV"
+        app:layout_constraintVertical_bias="0.384" />
+
+    <TextView
+        android:id="@+id/term_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="@string/loanterm"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/term_RG"
+        app:layout_constraintEnd_toEndOf="@+id/term_RG"
+        app:layout_constraintStart_toStartOf="@+id/term_RG" />
+
+    <RadioGroup
+        android:id="@+id/term_RG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rateTyper">
+
+        <RadioButton
+            android:id="@+id/two_option"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/_2"
+            android:text="@string/two_years" />
+
+        <RadioButton
+            android:id="@+id/three_option"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:contentDescription="@string/_3"
+            android:text="@string/three_years" />
+
+        <RadioButton
+            android:id="@+id/four_option"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/_4"
+            android:text="@string/four_years" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/generate_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="goToSummary"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="0"
+        android:text="@string/buttonText"
+        android:textColor="@color/lavender"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/term_RG"
+        app:layout_constraintStart_toStartOf="@+id/term_RG"
+        app:layout_constraintTop_toBottomOf="@+id/term_RG"
+        app:layout_constraintVertical_bias="0.32" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
